@@ -8,35 +8,34 @@ Realizei o projeto utilizando meus conhecimentos sobre java e consultando livros
 ---
 Uso do ChatGPT:
   Utilizei o ChatGPT para me ajudar a corrigir alguns erros do meu codigo, perguntas sobre o que servia tal funcao que iria utilizar, para uma pequena ajuda a interpretar o UML, e para descrever o projeto no Readme.
-  ---
+---
   Exemplo de perguntas para o ChatGPT:
     O construtor deve ter o mesmo nome da classe ?
-    ---
-    Resultado:
-      Sim — obrigatoriamente.
-          🧠 Regra
-          O construtor deve ter exatamente o mesmo nome da classe.
-          ✅ Exemplo correto
-          class Computador {
-              public Computador(String marca, float preco) {
-                // construtor
-            }
-          }
-          ---
-    Quando usar setter e getter e quando nao usar ?
-    Resultado:
-    ---
-      ✅ Quando USAR getter e setter
-        1. 🔒 Proteger atributos (encapsulamento)
-          Se o atributo é private, você usa getters/setters pra acessar de fora.
-          private double saldo;
-          public double getSaldo() {
-            return saldo;
-            }
-          public void setSaldo(double saldo) {
-            this.saldo = saldo;
-          }
-    ---
+---
+Resultado:
+Sim — obrigatoriamente.
+🧠 Regra
+O construtor deve ter exatamente o mesmo nome da classe.
+✅ Exemplo correto
+class Computador {
+   public Computador(String marca, float preco) {
+       // construtor
+      }
+   }
+ ---
+Quando usar setter e getter e quando nao usar ?
+  Resultado:
+---
+✅ Quando USAR getter e setter
+ 1. 🔒 Proteger atributos (encapsulamento)
+ 2. Se o atributo é private, você usa getters/setters pra acessar de fora.
+     private double saldo;
+    public double getSaldo() {
+    return saldo;
+    }
+     public void setSaldo(double saldo) {
+     this.saldo = saldo;
+    }---
         2. ⚠️ Quando precisa VALIDAR dados
         Setter é útil quando você quer evitar valores inválidos:
         public void setSaldo(double saldo) {
