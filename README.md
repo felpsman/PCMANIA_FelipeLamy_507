@@ -35,15 +35,15 @@ Quando usar setter e getter e quando nao usar ?
     }
      public void setSaldo(double saldo) {
      this.saldo = saldo;
+    }
+---
+2. ⚠️ Quando precisa VALIDAR dados
+Setter é útil quando você quer evitar valores inválidos:
+   public void setSaldo(double saldo) {
+   if (saldo >= 0) {
+      this.saldo = saldo;
+     }
     }---
-        2. ⚠️ Quando precisa VALIDAR dados
-        Setter é útil quando você quer evitar valores inválidos:
-        public void setSaldo(double saldo) {
-            if (saldo >= 0) {
-                this.saldo = saldo;
-              }
-          }
-          ---
         👉 Aqui faz total sentido usar setter.
         3. 📖 Getter para leitura controlada
         Quando você quer permitir leitura, mas não alteração:
