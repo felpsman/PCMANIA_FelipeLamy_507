@@ -1,6 +1,11 @@
 # PCMANIA_FelipeLamy_507
+Nome:Felipe Lamy Rosa Renno
+C06-A
+Matricula:507
+---
 Projeto realizado em cima da proposta do professor para um melhor entendimento da estrutura de objeto e POO.
 Realizei o projeto utilizando meus conhecimentos sobre java e consultando livros, slides da aula, codigos das aulas, videos e chatGPT versao 5.3.
+---
 Uso do ChatGPT:
   Utilizei o ChatGPT para me ajudar a corrigir alguns erros do meu codigo, perguntas sobre o que servia tal funcao que iria utilizar, para uma pequena ajuda a interpretar o UML, e para descrever o projeto no Readme.
   Exemplo de perguntas para o ChatGPT:
@@ -15,6 +20,7 @@ Uso do ChatGPT:
                 // construtor
             }
           }
+          ---
     Quando usar setter e getter e quando nao usar ?
     Resultado:
       ✅ Quando USAR getter e setter
@@ -27,6 +33,7 @@ Uso do ChatGPT:
           public void setSaldo(double saldo) {
             this.saldo = saldo;
           }
+          ---
         2. ⚠️ Quando precisa VALIDAR dados
         Setter é útil quando você quer evitar valores inválidos:
         public void setSaldo(double saldo) {
@@ -34,6 +41,7 @@ Uso do ChatGPT:
                 this.saldo = saldo;
               }
           }
+          ---
         👉 Aqui faz total sentido usar setter.
         3. 📖 Getter para leitura controlada
         Quando você quer permitir leitura, mas não alteração:
@@ -46,12 +54,15 @@ Uso do ChatGPT:
         Exemplo clássico:
       Cliente cliente = new Cliente(...);
       cliente.setCpf("outroCpf"); // ❌ perigoso
+      ---
       👉 CPF não deveria mudar → não crie setter
       2. 🚫 Quando o atributo não deve ser exposto
       Exemplo:
+      ---
       private double senha;
       👉 Não faz sentido:
       getSenha() ❌
+      ---
       3. 🚫 Quando a ação deve ser feita por MÉTODO, não setter
       Errado:
       conta.setSaldo(conta.getSaldo() + 100);
@@ -69,22 +80,23 @@ Uso do ChatGPT:
       Computador
       preco → pode ter getter
       Setter só se fizer sentido alterar depois
+      ---
       🔥 Resumo simples
       ✔️ Use getter → leitura
       ✔️ Use setter → com controle/validação
       ❌ Não use setter pra tudo automaticamente
       ❌ Não exponha dados sensíveis ou imutáveis
-
+---
 No geral, acredito que o uso do ChatGPT no projeto tenha sido bem benefico para minha aprendizagem sobre o funcionamento de java. 
-
+---
 Tambem utilizei o livro "Caelum - Java e Orientação a Objetos" em versao Pdf para aprofundar e entender alguns conceitos de programcao orientada a objetos.
-
+---
 Para entender melhor o UML, assisti um video do youtube:  https://www.youtube.com/watch?v=OuO49oIzV10
-
+---
 Para comecar a escrever o codigo e ir avancando no projeto, utilizei os slides das Aulas e tambem o repositorio dos codigos das aulas.
-
+---
 Abaixo, temos a explicacao do projeto que pedi para chat fazer: Utilizei o prompt: "Faca um resumo do que voce me ajudou para eu adicionar no readme do projeto"
-
+---
 # 🖥️ Projeto PCMANIA — Resumo do Desenvolvimento
   ## 📌 Objetivo
 Desenvolver um sistema em Java para simular a compra de computadores, permitindo cadastrar clientes, selecionar ofertas e visualizar o resumo do pedido.
