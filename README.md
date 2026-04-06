@@ -11,6 +11,7 @@ Uso do ChatGPT:
   ---
   Exemplo de perguntas para o ChatGPT:
     O construtor deve ter o mesmo nome da classe ?
+    ---
     Resultado:
       Sim — obrigatoriamente.
           🧠 Regra
@@ -24,6 +25,7 @@ Uso do ChatGPT:
           ---
     Quando usar setter e getter e quando nao usar ?
     Resultado:
+    ---
       ✅ Quando USAR getter e setter
         1. 🔒 Proteger atributos (encapsulamento)
           Se o atributo é private, você usa getters/setters pra acessar de fora.
@@ -34,7 +36,7 @@ Uso do ChatGPT:
           public void setSaldo(double saldo) {
             this.saldo = saldo;
           }
-          ---
+    ---
         2. ⚠️ Quando precisa VALIDAR dados
         Setter é útil quando você quer evitar valores inválidos:
         public void setSaldo(double saldo) {
