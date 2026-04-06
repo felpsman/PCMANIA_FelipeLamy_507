@@ -8,6 +8,7 @@ Realizei o projeto utilizando meus conhecimentos sobre java e consultando livros
 ---
 Uso do ChatGPT:
   Utilizei o ChatGPT para me ajudar a corrigir alguns erros do meu codigo, perguntas sobre o que servia tal funcao que iria utilizar, para uma pequena ajuda a interpretar o UML, e para descrever o projeto no Readme.
+  ---
   Exemplo de perguntas para o ChatGPT:
     O construtor deve ter o mesmo nome da classe ?
     Resultado:
